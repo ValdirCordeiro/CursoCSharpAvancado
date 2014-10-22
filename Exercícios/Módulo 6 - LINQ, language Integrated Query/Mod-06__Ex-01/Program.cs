@@ -16,6 +16,11 @@ namespace Softblue
                      orderby i.Preco descending
                      select i;
 
+            foreach (var i in q1)
+            {
+                Console.WriteLine(i);
+            }
+
             // Itens com preço maior ou igual a R$ 3,00 ordenados por preço de forma crescente.
             var q2 = from i in itens
                      where i.Preco >= 3
